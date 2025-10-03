@@ -1,3 +1,11 @@
+library(shiny)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(scales)
+library(memoise)
+library(DT)
+library(liu.lab5.koladar)
 # --- Memoized Data Loading Functions ---
 # This code defines the functions but does NOT call them at startup.
 mem_get_kpis <- memoise::memoise(get_kpis)

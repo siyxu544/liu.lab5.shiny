@@ -1,3 +1,5 @@
+library(shiny)
+library(DT)
 # Define the user interface
 fluidPage(
   # Application title
