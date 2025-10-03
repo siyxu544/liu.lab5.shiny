@@ -1,0 +1,33 @@
+Package: liu.lab5.shiny
+Type: Package
+Title: An Interactive Web Application for Browsing Kolada Data
+Version: 1.0.0
+Authors@R: c(
+    person(given = "Siyuan", family = "Xu", email = "ningschue@gmail.com", role = c("aut", "cre")),
+    person(given = "Mohan", family = "Zhang", email = "mohzh143@student.liu.se", role = c("aut")),
+    person(given = "Chenzhi", family = "Ni", email = "cheni622@student.liu.se", role = c("aut"))
+  )
+Description: A web application built using the 'shiny' framework that provides 
+    an interactive user interface for the 'liu.lab5.koladar' package. 
+    The app enables users to explore data from the Swedish Kolada 
+    database by allowing them to search and select Key Performance 
+    Indicators (KPIs) and municipalities, specify a time period, and 
+    view the results. Data is visualized as a time-series plot and 
+    presented in an interactive table for detailed inspection.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat
+Imports: 
+    dplyr,
+    DT,
+    ggplot2,
+    liu.lab5.koladar (>= 1.0.0),
+    memoise,
+    scales,
+    shiny,
+    tidyr
+RoxygenNote: 7.3.2
+Remotes: 
+    siyxu544/liu.lab5.koladar
